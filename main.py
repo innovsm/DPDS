@@ -57,8 +57,7 @@ if(run_button and user_input != "" and user_type  != ""):
     
     # framing the querry for result
     query = "Write a  effictive and engaging description under 200 words product description   of {} our target customer are {}, product details are {}".format(user_input, user_type,product_details)
-    try:
-        data = chat_with_chatgpt(query)
-        st.write(data)
-    except:
-        st.write("Unexpected error came")
+
+    data = chat_with_chatgpt(query)
+    st.write(data)
+
