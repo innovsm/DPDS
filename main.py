@@ -6,7 +6,7 @@ from gpt_connection import chat_with_chatgpt
 
 st.header("Descriva")
 # user - type ---> 
-user_type = st.text_input("Enter the Customer professio","i.e Student, Businessman, etc")
+user_type = st.text_input("Enter the Customer profession","i.e Student, Businessman, etc")
 user_input =  st.selectbox("Select Product", ['', '5 AM CLUB BOOK','Smart Watch','Laptop','Protein Powder',
                                               'Shoes','Peanut Butter'])
 run_button =   st.button("Run")
