@@ -3,7 +3,6 @@ from gpt_connection import chat_with_chatgpt
 
 
 # main code comes here
-
 st.header("Descriva")
 # user - type ---> 
 user_type = st.text_input("Enter the Customer profession","i.e Student, Businessman, etc")
@@ -60,4 +59,6 @@ if(run_button and user_input != "" and user_type  != ""):
 
     data = chat_with_chatgpt(query)
     st.write(data)
+
+    st.button("Buy")
 

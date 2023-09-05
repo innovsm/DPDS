@@ -1,7 +1,7 @@
 import openai
-
+import streamlit as st 
 # main function from here
-openai.api_key = "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"
+openai.api_key = st.secrets["api_key"]
 
 def chat_with_chatgpt(prompt, model="text-davinci-003"):
     response = openai.Completion.create(
