@@ -1,7 +1,7 @@
 import openai
 
 # main function from here
-openai.api_key = "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"
+openai.api_key = "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"
 
 def chat_with_chatgpt(prompt, model="text-davinci-003"):
     response = openai.Completion.create(
