@@ -1,7 +1,7 @@
 import openai
 import streamlit as st 
 # main function from here
-openai.api_key = st.secrets["api_key"]
+openai.api_key =  "alfa"
 
 def chat_with_chatgpt(prompt, model="text-davinci-003"):
     response = openai.Completion.create(

@@ -4,12 +4,27 @@ from gpt_connection import chat_with_chatgpt
 
 st.header("Demo E-commerce platform")
 # putting one dropdown here
-with st.expander(label = "how app works",expanded=False):
+with st.expander(label = "APP DETAILS",expanded=False):
     st.write("""This app uses customer order history and personal profile to provide targeted  description of the
              product user is searching for. This technology increases the consumer engagment and likliehod of consumer buying the 
              product. The reason is personalized product description and not the general one , giving the feel 
              that product is meant for the customer
              """)
+    # expander for each data - points
+with st.expander(label="Technical Details" , expanded=False):
+        st.header("Flowchart")
+        st.image("flowchart.png")
+        st.header("library used")
+        st.write("* Streamlit")
+        st.write("* openai")
+        st.subheader("Foundation model used")
+        st.write("""We are using text-davinci-003 LLM model for generating response , This model is connected by
+                 API for response. he text-davinci-003 model, also known as LLM (Large Language Model), is a variant of the
+                  GPT-3 architecture developed by OpenAI. 
+                 It's designed to perform a wide range of natural language understanding and generation tasks.""")
+        st.write("Source Code Link : https://github.com/innovsm/DPDS")
+        
+
 
 user_type = st.text_input("Enter the Customer profession, i.e , doctor , student, None") # info - 1
 order_history = st.text_input("Enter user order hstory i.e , books, markers, shoes , t-shirt")  # info - 2
